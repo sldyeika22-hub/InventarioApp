@@ -7,7 +7,7 @@ InventarioApp: Sistema de control de inventario
 - Yeika Macho
 - Armando Chavarria M
 - Yafeth Rodriguez Fernandez
-- Keilor
+- Keylor Diaz Davila
 - [Nombre del integrante 5]
 
 ## Problema
