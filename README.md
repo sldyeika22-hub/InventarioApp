@@ -10,7 +10,7 @@ Desarrollar un sistema de inventario sencillo y funcional que permita administra
 - Yeika Macho
 - Armando Chavarria M
 - Yafeth Rodriguez Fernandez 
-- Keilor
+- Keylor Díaz Dávila
 - [Nombre del integrante 5]
 
 ## Tecnologías
