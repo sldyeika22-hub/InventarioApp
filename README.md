@@ -9,7 +9,7 @@ Desarrollar un sistema de inventario sencillo y funcional que permita administra
 ## Integrantes
 - Yeika Macho
 - Armando Chavarria M
-- Jafeth
+- Yafeth Rodriguez Fernandez 
 - Keilor
 - [Nombre del integrante 5]
 
