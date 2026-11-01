@@ -36,6 +36,7 @@ Desarrollar un sistema de inventario sencillo y funcional que permita administra
 Avance 1: primera versión funcional. Pendiente para el Avance 2: consultas por categoría o proveedor, búsquedas, modificación, eliminación, entradas y salidas de existencias, y manuales.
 
 ## Estructura
+```
 InventarioApp/
 ├── Producto.cs           (modelo de datos)
 ├── GestorInventario.cs   (lógica, validaciones y lista en memoria)
@@ -45,6 +46,8 @@ InventarioApp/
 ├── README.md
 └── docs/
     └── propuesta.md
+```
+
 
 ## Ejecución
 1. Clonar el repositorio: git clone https://github.com/sldyeika22-hub/InventarioApp.git
