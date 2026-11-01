@@ -62,11 +62,12 @@ Desarrollar una aplicación de escritorio en C# con Windows Forms que permita ad
 - Manejo de errores y manuales de usuario y técnico.
 
 ## Distribución inicial de tareas
-| Integrante | Responsabilidad |
-|---|---|
-| Integrante 1 | Formulario principal, navegación, salida del sistema y creación del repositorio |
-| Integrante 2 | Formulario de registro, validaciones y conversión de datos |
-| Integrante 3 | Clase Producto, gestor con la lista, búsquedas y consultas |
-| Integrante 4 | Entradas y salidas de existencias y alerta de stock bajo |
-| Integrante 5 | Modificación y eliminación de productos, y coordinación de los manuales |
-| Todos | Documentación de su módulo, commits propios y revisión del código de los demás |
+## Distribución de tareas
+| Integrante | Avance 1 | Avance 2 (por hacer) |
+|---|---|---|
+| Yeika | Repositorio, formulario principal, navegación, salida, registro con validaciones, clase Producto, lista en memoria, DataGridView, alerta de stock bajo, README y propuesta | Revisión general del código y de la documentación |
+| Integrante 2 | Redacción del problema y la justificación en la propuesta | Búsquedas y consultas por categoría o proveedor |
+| Integrante 3 | Documento de pruebas del registro (docs/pruebas.md) | Entradas y salidas de existencias |
+| Integrante 4 | Mejora de código: total de productos en la ventana de registro | Modificación y eliminación de productos |
+| Integrante 5 | Sección "Cómo usar la aplicación" en el README | Manual de usuario y manual técnico |
+| Todos | Commits propios en GitHub y revisión del código de los demás | Documentación de su módulo |
