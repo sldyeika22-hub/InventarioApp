@@ -6,7 +6,7 @@ InventarioApp: Sistema de control de inventario
 ## Integrantes
 - Yeika Macho
 - Armando Chavarria M
-- Jafeth
+- Yafeth Rodriguez Fernandez
 - Keilor
 - [Nombre del integrante 5]
 
