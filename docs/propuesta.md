@@ -66,7 +66,7 @@ Desarrollar una aplicación de escritorio en C# con Windows Forms que permita ad
 | Integrante | Avance 1 | Avance 2 (por hacer) |
 |---|---|---|
 | Yeika | Repositorio, formulario principal, navegación, salida, registro con validaciones, clase Producto, lista en memoria, DataGridView, alerta de stock bajo, README y propuesta | Revisión general del código y de la documentación |
-| Integrante 2 | Redacción del problema y la justificación en la propuesta | Búsquedas y consultas por categoría o proveedor |
+| Armando Chavarria Mora | Redacción del problema y la justificación en la propuesta | Búsquedas y consultas por categoría o proveedor |
 | Integrante 3 | Documento de pruebas del registro (docs/pruebas.md) | Entradas y salidas de existencias |
 | Integrante 4 | Mejora de código: total de productos en la ventana de registro | Modificación y eliminación de productos |
 | Integrante 5 | Sección "Cómo usar la aplicación" en el README | Manual de usuario y manual técnico |
