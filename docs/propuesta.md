@@ -1,9 +1,11 @@
 # Propuesta del proyecto
 
-## Nombre
-InventarioApp: Sistema de control de inventario
+## Nombre del proyecto
+
+**InventarioApp: Sistema de gestión de inventario**
 
 ## Integrantes
+
 - Yeika Macho
 - Armando Chavarria M
 - Yafeth Rodriguez Fernandez
@@ -11,63 +13,92 @@ InventarioApp: Sistema de control de inventario
 - [Nombre del integrante 5]
 
 ## Problema
-Muchos negocios pequeños llevan el control de sus productos en cuadernos o de memoria. Esto provoca errores en las existencias, productos que se agotan sin que nadie lo note, y pérdida de tiempo al buscar información de un producto o de su proveedor.
+
+Los pequeños negocios pueden llevar el control de sus productos de forma manual, por ejemplo, mediante cuadernos o registros dispersos. Este procedimiento puede provocar errores en las existencias, dificultar la búsqueda de productos y hacer que se detecte tarde cuando un artículo está por agotarse.
 
 ## Justificación
-Un sistema de escritorio sencillo permite tener la información de los productos ordenada en un solo lugar, consultarla rápido y recibir alertas cuando un producto está por agotarse. Además, el proyecto permite aplicar los conocimientos de C#, Windows Forms, validaciones, colecciones y trabajo en equipo con Git y GitHub.
 
-## Usuarios
-- Encargado o dueño de un pequeño negocio.
-- Personal de bodega o de ventas que registra y consulta productos.
+Una aplicación de escritorio sencilla permite organizar los datos de los productos en una sola interfaz, consultar la información con rapidez y controlar las existencias. El desarrollo también permite aplicar conocimientos de C#, programación orientada a objetos, Windows Forms, validaciones, colecciones, eventos y trabajo colaborativo con Git y GitHub.
+
+## Usuarios destinatarios
+
+- Encargados o propietarios de pequeños negocios.
+- Personal responsable de bodega o de registrar y consultar productos.
 
 ## Objetivo general
-Desarrollar una aplicación de escritorio en C# con Windows Forms que permita administrar el inventario de productos y sus existencias de forma ordenada y confiable.
+
+Desarrollar una aplicación de escritorio en C# con Windows Forms que permita administrar productos y controlar sus existencias de manera organizada.
 
 ## Objetivos específicos
-1. Registrar productos con nombre, categoría y proveedor.
-2. Validar los datos ingresados para evitar errores y duplicados.
-3. Almacenar los productos en memoria mediante listas y mostrarlos en un DataGridView.
-4. Actualizar las existencias mediante entradas y salidas.
-5. Consultar, modificar y eliminar productos.
-6. Mostrar el stock disponible y alertar cuando sea bajo.
-7. Documentar el sistema y usar Git y GitHub durante todo el desarrollo.
+
+1. Registrar productos con nombre, categoría, proveedor, stock inicial y stock mínimo.
+2. Validar los datos ingresados para reducir errores y evitar nombres duplicados.
+3. Mantener los productos en una lista en memoria y mostrarlos en un `DataGridView`.
+4. Buscar productos por texto y filtrar por categoría.
+5. Modificar los datos generales y eliminar productos registrados.
+6. Actualizar las existencias mediante operaciones de entrada y salida.
+7. Mostrar estadísticas generales y advertir visualmente cuando el stock sea bajo.
+8. Documentar el uso y la estructura técnica del sistema en Markdown.
 
 ## Alcance
-- Aplicación de escritorio con Windows Forms.
-- Registro, consulta, búsqueda, modificación y eliminación de productos.
-- Control de entradas y salidas de existencias.
-- Alerta de stock bajo.
-- Datos guardados en memoria mientras el programa está abierto.
-- Documentación en Markdown (README, propuesta y manuales).
 
-## Fuera de alcance
-- Bases de datos o almacenamiento permanente en archivos.
-- Inicio de sesión y manejo de usuarios.
-- Facturación, ventas o contabilidad.
-- Versión web o móvil.
-- Reportes impresos o exportación a Excel.
+El sistema incluye:
 
-## Funcionalidades
-**Avance 1**
-- Formulario principal y navegación.
-- Registro de productos con validaciones.
-- Lista en memoria y tabla (DataGridView).
-- Alerta de stock bajo.
-- Limpieza de controles, mensajes y salida del sistema.
+- Una ventana principal para ingresar al módulo de inventario o salir de la aplicación.
+- Un formulario para registrar, consultar, buscar, modificar y eliminar productos.
+- Categorías predefinidas: Alimentos, Bebidas, Limpieza, Tecnología, Papelería y Otros.
+- Validación de nombre obligatorio, longitud mínima de tres caracteres, categoría y proveedor obligatorios.
+- Validación de stock y stock mínimo como números enteros no negativos.
+- Control de nombres duplicados sin distinguir mayúsculas y minúsculas.
+- Búsqueda por nombre, categoría o proveedor y filtro específico por categoría.
+- Entradas y salidas de existencias mediante cantidades enteras positivas.
+- Prevención de salidas superiores al stock disponible.
+- Indicador de stock bajo cuando el stock actual es menor o igual al stock mínimo.
+- Estadísticas de cantidad de productos, total de unidades y productos con stock bajo.
+- Documentación del proyecto mediante `README.md` y tres documentos dentro de `docs/`.
 
-**Avance 2**
-- Consultas por categoría o proveedor y búsquedas.
-- Modificación y eliminación de productos.
-- Entradas y salidas de existencias.
-- Manejo de errores y manuales de usuario y técnico.
+## Fuera de alcance y limitaciones
 
-## Distribución inicial de tareas
+- No se utiliza una base de datos.
+- No se guarda información en archivos. Los productos se mantienen en una lista en memoria y se pierden al cerrar completamente la aplicación.
+- No se mantiene un historial de movimientos; las entradas y salidas actualizan únicamente el stock actual.
+- No incluye inicio de sesión, permisos de usuario, facturación, contabilidad, versión web o móvil ni exportación a Excel.
+
+## Tecnologías y herramientas
+
+| Elemento | Tecnología |
+|---|---|
+| Lenguaje | C# |
+| Interfaz | Windows Forms |
+| Plataforma | .NET Framework 4.7.2 |
+| Entorno de desarrollo | Visual Studio |
+| Control de versiones | Git y GitHub |
+| Colección principal | `List<Producto>` |
+
+## Descripción general del funcionamiento
+
+`Program.cs` inicia `FormPrincipal`. Desde la ventana principal se abre `FormRegistro`. Este formulario recibe las acciones del usuario y llama a los métodos de `GestorInventario`. La clase `GestorInventario` administra la lista de objetos definidos por `Producto.cs`, aplica las validaciones y realiza los cambios sobre las existencias.
+
+## Documentación incluida
+
+La documentación del proyecto se limita a los siguientes archivos Markdown:
+
+- `README.md`: descripción general, tecnologías, estructura e instrucciones iniciales.
+- `docs/propuesta.md`: problema, justificación, objetivos y alcance.
+- `docs/manual-usuario.md`: instrucciones para utilizar la aplicación.
+- `docs/manual-tecnico.md`: arquitectura y explicación técnica del código.
+
 ## Distribución de tareas
-| Integrante | Avance 1 | Avance 2 (por hacer) |
-|---|---|---|
-| Yeika | Repositorio, formulario principal, navegación, salida, registro con validaciones, clase Producto, lista en memoria, DataGridView, alerta de stock bajo, README y propuesta | Revisión general del código y de la documentación |
-| Armando Chavarria Mora | Redacción del problema y la justificación en la propuesta | Búsquedas y consultas por categoría o proveedor |
-| Integrante 3 | Documento de pruebas del registro (docs/pruebas.md) | Entradas y salidas de existencias |
-| Integrante 4 | Mejora de código: total de productos en la ventana de registro | Modificación y eliminación de productos |
-| Integrante 5 | Sección "Cómo usar la aplicación" en el README | Manual de usuario y manual técnico |
-| Todos | Commits propios en GitHub y revisión del código de los demás | Documentación de su módulo |
+
+La siguiente tabla conserva la distribución de trabajo indicada por el equipo y resume los módulos relacionados con el alcance del proyecto.
+
+| Integrante | Responsabilidades indicadas |
+|---|---|
+| Yeika Macho         | Repositorio, formulario principal, navegación, salida, registro con validaciones, clase `Producto`, lista en memoria, tabla, alerta de stock bajo, README y propuesta; revisión general. |
+| Armando Chavarria M | Redacción del problema y justificación; búsquedas y consultas por categoría o proveedor. |
+| Integrante 3        | Apoyo en el control de entradas y salidas de existencias. |
+| Yafeth Rodriguez    | Estadísticas del inventario; modificación y eliminación de productos. |
+| Integrante 5        | Manual de usuario y manual técnico. |
+| Todos | Commits propios en GitHub, revisión del código y documentación de sus módulos. |
+
+> Actualice los nombres provisionales y la distribución de tareas si el equipo acuerda cambios. La tabla describe la asignación reportada por el equipo; no sustituye el historial de commits de GitHub.

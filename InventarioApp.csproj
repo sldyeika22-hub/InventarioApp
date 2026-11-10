@@ -77,6 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="README.md" />
+    <None Include="docs\propuesta.md" />
+    <None Include="docs\manual-usuario.md" />
+    <None Include="docs\manual-tecnico.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
