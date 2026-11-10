@@ -53,3 +53,7 @@ InventarioApp/
 1. Clonar el repositorio: git clone https://github.com/sldyeika22-hub/InventarioApp.git
 2. Abrir la solución en Visual Studio.
 3. Ejecutar con F5 (el formulario de inicio es FormPrincipal).
+
+4.## Cómo usar la aplicación
+1. En la ventana de registro, ingrese los datos solicitados del producto.
+2. Presione el botón correspondiente para guardar o registrar el producto en el sistema. 
