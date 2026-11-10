@@ -11,7 +11,7 @@ Desarrollar un sistema de inventario sencillo y funcional que permita administra
 - Armando Chavarria M
 - Yafeth Rodriguez Fernandez 
 - Keylor Díaz Dávila
-- [Nombre del integrante 5]
+- Yeimy Villalobos Fernandez
 
 ## Tecnologías
 | Elemento | Tecnología |
