@@ -8,7 +8,7 @@ InventarioApp: Sistema de control de inventario
 - Armando Chavarria M
 - Yafeth Rodriguez Fernandez
 - Keylor Diaz Davila
-- [Nombre del integrante 5]
+- Yeimy Villalobos Fernandez
 
 ## Problema
 Muchos negocios pequeños llevan el control de sus productos en cuadernos o de memoria. Esto provoca errores en las existencias, productos que se agotan sin que nadie lo note, y pérdida de tiempo al buscar información de un producto o de su proveedor.
