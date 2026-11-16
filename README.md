@@ -32,20 +32,28 @@ Aplicación de escritorio desarrollada en C# con Windows Forms y .NET Framework 
 
 ```text
 InventarioApp/
-├── Program.cs
-├── FormPrincipal.cs
-├── FormRegistro.cs
+│
 ├── Producto.cs
 ├── GestorInventario.cs
-├── InventarioApp.csproj
-├── InventarioApp.slnx
-├── App.config
+├── FormPrincipal.cs
+├── FormRegistro.cs
+├── Program.cs
+│
 ├── README.md
-├── Properties/
+│
 └── docs/
     ├── propuesta.md
-    ├── manual-usuario.md
-    └── manual-tecnico.md
+    ├── pruebas.md
+    │
+    └── evidencias/
+        ├── 01_Registro_Productos.png
+        ├── 02_Actualizar_Producto.png
+        ├── 03_Entrada_Inventario.png
+        ├── 04_Salida_Inventario.png
+        ├── 05_Busqueda_Filtros.png
+        ├── 06_Stock_Bajo.png
+        ├── 07_Eliminar_Producto.png
+        └── 08_Validaciones.png
 ```
 
 ## Cómo abrir y ejecutar
@@ -79,3 +87,18 @@ InventarioApp/
 - No se guarda un historial de entradas y salidas; únicamente se actualiza el stock actual.
 - Los nombres de productos deben ser únicos en todo el inventario, sin distinguir mayúsculas y minúsculas.
 - Las estadísticas muestran el inventario completo, aunque la tabla esté filtrada.
+
+## Pruebas del sistema
+
+Se realizaron pruebas funcionales para verificar:
+
+- Registro de productos.
+- Actualización y eliminación.
+- Entradas y salidas de inventario.
+- Búsqueda y filtros.
+- Control de stock mínimo.
+- Validaciones del sistema.
+
+Para consultar los resultados y las capturas:
+
+[Ver informe de pruebas](docs/pruebas.md)
