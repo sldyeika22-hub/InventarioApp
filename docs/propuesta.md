@@ -98,7 +98,7 @@ La siguiente tabla conserva la distribución de trabajo indicada por el equipo y
 | Armando Chavarria M | Redacción del problema y justificación; búsquedas y consultas por categoría o proveedor. |
 | Integrante 3        | Apoyo en el control de entradas y salidas de existencias. |
 | Yafeth Rodriguez    | Estadísticas del inventario; modificación y eliminación de productos. |
-| Integrante 5        | Manual de usuario y manual técnico. |
+| Keylor Díaz Dávila        | Manual de usuario y manual técnico. |
 | Todos | Commits propios en GitHub, revisión del código y documentación de sus módulos. |
 
 > Actualice los nombres provisionales y la distribución de tareas si el equipo acuerda cambios. La tabla describe la asignación reportada por el equipo; no sustituye el historial de commits de GitHub.
