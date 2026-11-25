@@ -244,5 +244,26 @@ namespace InventarioApp
         {
             return productos.Count(p => p.Stock <= p.StockMinimo);
         }
+        // Solo para la demostración: carga productos de ejemplo.
+        public static void CargarDatosDePrueba()
+        {
+            if (productos.Count > 0) return; // evita duplicarlos
+
+            Agregar("Laptop Dell", "Tecnología", "Tecno CR", 10, 3);
+            Agregar("Mouse inalámbrico", "Tecnología", "Tecno CR", 25, 5);
+            Agregar("Teclado mecánico", "Tecnología", "Tecno CR", 3, 5);
+            Agregar("Agua mineral 500 ml", "Bebidas", "Distribuidora La Fuente", 48, 12);
+            Agregar("Jugo de naranja 1 L", "Bebidas", "Frutas del Sol", 6, 10);
+            Agregar("Café molido 500 g", "Bebidas", "Cafetal Tico", 15, 5);
+            Agregar("Cuaderno universitario", "Papelería", "Papelera Central", 40, 10);
+            Agregar("Lapicero azul", "Papelería", "Papelera Central", 60, 15);
+            Agregar("Resaltador", "Papelería", "Papelera Central", 2, 5);
+            Agregar("Desinfectante 1 L", "Limpieza", "Limpio CR", 12, 4);
+            Agregar("Jabón líquido", "Limpieza", "Limpio CR", 20, 6);
+            Agregar("Escoba", "Limpieza", "Limpio CR", 5, 5);
+            Agregar("Silla ergonómica", "Otros", "Muebles CR", 8, 2);
+            Agregar("Escritorio", "Otros", "Muebles CR", 1, 2);
+        }
+
     }
 }

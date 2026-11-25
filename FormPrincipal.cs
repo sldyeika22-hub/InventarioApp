@@ -12,6 +12,7 @@ namespace InventarioApp
 
         public FormPrincipal()
         {
+            GestorInventario.CargarDatosDePrueba();
             Text = "Sistema de Inventario";
             StartPosition = FormStartPosition.CenterScreen;
             Size = new Size(560, 390);
